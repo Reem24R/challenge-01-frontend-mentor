@@ -1,0 +1,104 @@
+body
+{
+    margin: 50px;
+    font-size: 16px;
+}
+li,p,td
+{
+    font-family: "Outfit", sans-serif;
+
+}
+.head-img
+{
+    background-image: url('./assets/images/image-omelette.jpeg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.prep
+{
+    padding-left: 30px;
+    padding-top: 20px;
+   color: hsl(332, 51%, 32%);
+   font-family: "Outfit", sans-serif;
+   font-weight:bold;
+}
+.list1
+{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+.list1 li
+{
+    padding: 10px;
+}
+ h2
+{
+    font-family: "Young Serif", serif;;
+    color: hsl(14, 45%, 36%)
+}
+/* .ingredients{background-color: blanchedalmond;} */
+.ingredients ul {
+    list-style-type: none;
+    padding-left: 0; 
+  }
+  .ingredients li
+  {
+    margin-left: 0;
+    padding-top: 10px; 
+}
+  .ingredients li::before {
+    content: "•"; 
+    color: hsl(14, 45%, 36%);
+    font-size: 1.2em; 
+    margin-right: 20px;
+    margin-left: 5px;
+    left:-5em;
+  }
+  
+.instructions ol {
+    list-style-type: none; 
+    counter-reset: myCounter; 
+  }
+  
+  .instructions li {
+    display: block; 
+    position: relative; 
+  }
+  
+.instructions  li::before {
+    content: counter(myCounter) ". "; 
+    counter-increment: myCounter; 
+    color: hsl(14, 45%, 36%);
+    font-weight: bold; 
+    position: absolute; 
+    left: -2em; 
+  }
+  .instructions li
+  {
+    padding:10px;
+  }
+  table
+  {
+    border-collapse: collapse;
+    width: 100%;
+  }
+    tr
+  {
+    border-bottom: 1px solid black;
+  }
+  td
+  {
+      padding:10px 0px;
+      padding-left: 20px;
+  
+  }
+.end {border:none}
+.number
+{
+    color: hsl(14, 45%, 36%)
+
+}
